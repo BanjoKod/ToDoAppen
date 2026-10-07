@@ -5,6 +5,8 @@ function App(){
       "Fyll i din lista här"
     ]);
 
+    const [draft, setDraft] = useState("");
+
   function clearList(){
     setTodos([]);
   }

@@ -5,7 +5,9 @@ function App(){
       "Fyll i din lista här"
     ]);
 
-    const [draft, setDraft] = useState("");
+    const [draft, setDraft] = useState([
+    {id: 1, text: "Fyll i din text här", done: false}
+  ]);
 
   function clearList(){
     setTodos([]);
@@ -22,19 +24,36 @@ function App(){
   function addText(){
     const text = draft.trim();
     if (text === "") return;
-    setTodos([...todos, text]);
+    setTodos([...todos, {id: Date.now(), text: text, done: false }]);
     setDraft("");
+  }
+
+  function toggleTodo(id) {
+    setTodos(todos.map((t) =>
+    t.id === id ? { ...t, done: !t.done } : t
+  ));
+  }
+
+  function removeTodo(id) {
+    setTodos(todos.filter((t) => t.id !== id));
   }
 
   return (
     <main>
       <h1>Lägg till i din lista</h1>
       <ul>
-        {todos.map((t, i) => (
-          <li key={i}>{t}</li>
+        {todos.map((t) => (
+          <li key={t.id}>
+            <input
+            type="checkbox"
+            checked={t.done}
+            onChange={() => toggleTodo(t.id)} 
+            />
+            <span style={{ textDecoration: t.done ? "line-through" : "none" }}> {t.text}</span>
+            <button type="button" onClick={() => removeTodo(t.id)}>Ta bort</button>
+            </li>
         ))}
-      </ul>
-      <button type="button" onClick={clearList}>Ta bort</button>
+      </ul>      
       <section>
         <input 
         type="text"
@@ -43,8 +62,9 @@ function App(){
           placeholder="Skriv här..."
           />
         <p>Kladd för tillfället...</p>
-        <button type="button" onClick={handleClear}>Ta bort</button>
-        <button type="button" onClick={addText}>Lägg till</button>
+        <button type="button" onClick={handleClear}>Ta bort text i rutan</button>
+        <button type="button" onClick={addText}>Lägg till i listan</button>
+        <button type="button" onClick={clearList}>Ta bort hela listan</button>
       </section>
     </main>
   );

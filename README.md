@@ -1,3 +1,5 @@
+https://teams.microsoft.com/l/meetingrecap?driveId=b%21kTCIWUyaIEeof2mfgeKCM-EAmquQgQtFpLYEdzCT6g8iasw_Q5FWTbADlsV3gRoO&driveItemId=01BNRDC5RG7X2B7KYPJJCZVCTV6VVQOZW7&sitePath=https%3A%2F%2Ffunet-my.sharepoint.com%2F%3Av%3A%2Fg%2Fpersonal%2F3ggyhmu26_hogmad_folkuniversitetet_nu%2FIQAm_fQfqw9KRZqKdfVrB2bfAe4UpL-YNFG3_ql1X5sfiy4&fileUrl=https%3A%2F%2Ffunet-my.sharepoint.com%2Fpersonal%2F3ggyhmu26_hogmad_folkuniversitetet_nu%2FDocuments%2FInspelningar%2FMeeting+with+Adam+H%C3%B6gman+MU26-20261009_172506-Meeting+Recording.mp4%3Fweb%3D1&threadId=19%3Ameeting_OTFlOWFlY2QtMzM5Mi00ZmEzLTg2NjItYTcwNmI5NjUxMGYx%40thread.v2&organizerId=e22bbc1b-0521-42c4-9fbf-3f85e388df65&tenantId=a4d3b9bf-2082-4eee-ab79-fd407faef1e5&callId=b3cf86a6-9fa8-455b-ac42-7648337d8df0&threadType=Meeting&meetingType=MeetNow&subType=RecapSharingLink_RecapCore&recapType=Recording
+
 Skriv i README.md
 Besvara följande delar kort med egna ord i ditt repo:
 

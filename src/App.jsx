@@ -8,7 +8,14 @@ function App(){
     const [draft, setDraft] = useState([
     {id: 1, text: "Fyll i din text här", done: false}
   ]);
-
+  
+  function addText(){
+    const text = draft.trim();
+    if (text === "") return;
+    setTodos([...todos, {id: Date.now(), text: text, done: false }]);
+    setDraft("");
+  }
+  
   function clearList(){
     setTodos([]);
   }
@@ -21,12 +28,6 @@ function App(){
     setDraft("");
   }
 
-  function addText(){
-    const text = draft.trim();
-    if (text === "") return;
-    setTodos([...todos, {id: Date.now(), text: text, done: false }]);
-    setDraft("");
-  }
 
   function toggleTodo(id) {
     setTodos(todos.map((t) =>

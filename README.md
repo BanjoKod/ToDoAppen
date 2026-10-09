@@ -1,16 +1,27 @@
-# React + Vite
+Skriv i README.md
+Besvara följande delar kort med egna ord i ditt repo:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. Frågor om koden (ca 2–4 meningar per fråga)
+    1.1 State-hantering: Hur håller din app reda på vilka uppgifter som finns och om de är klara? Vad händer med gränssnittet när datan uppdateras?
+        -        
 
-Currently, two official plugins are available:
+    1.2 Oföränderlighet (Immutability): Varför får man inte ändra en befintlig array direkt med t.ex. .push() i React? Hur gör du istället när du lägger till eller tar bort en uppgift?
+        -
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+2. Kodgranskning
+    Nedan är en funktion från en annan utvecklares lösning. Klistra inte in den i din app, utan förklara i din README vad som är felaktigt med koden i ett React-sammanhang och hur du skulle skriva om den för att den ska bli korrekt:
+        - 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+function addTodo(todos, text) {
+  todos.push(text);
+  return todos;
+}
+🔗 Koddetektiven - Läs denna innan du gör din kodgranskning.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Problemlösning & Reflektion (3–5 meningar)
+    Hur gjorde du när du körde fast eller stötte på ett problem? Om du använde verktyg som AI, Google eller React-dokumentationen: ge ett konkret exempel på hur du tog hjälp för att förstå och lösa problemet själv.
+        - Vad jag gör/ har gjort är att först stirra mig blind på själva koden och leta efter rader där jag skrivit , istället för ; eller () istället för [] eller motsvarande. Hittar jag inte dessa så har jag dels försökt leta rätt via inspektera och som sista utväg klistrat in koden i AI och bett om hjälp att se VAR bland alla tecken det blev fel. 9/10 gånger är det ett minimalt stavfel eller fel tecken som orsakar att det inte fungerar. 
+
+        Är det rakt av fel i koden så ber jag om en förklaring till varför man inte ska skriva så som jag gjorde så att jag förstår och kan göra rätt i framtida koder.

@@ -39,7 +39,7 @@ function App(){
   }
 
   return (
-    <main>
+    <div className='todolistan'>
       <h1>Lägg till i din lista</h1>
       <ul>
         {todos.map((t) => (
@@ -50,7 +50,7 @@ function App(){
             onChange={() => toggleTodo(t.id)} 
             />
             <span style={{ textDecoration: t.done ? "line-through" : "none" }}> {t.text}</span>
-            <button type="button" onClick={() => removeTodo(t.id)}>Ta bort</button>
+            <button class="remove" onClick={() => removeTodo(t.id)}>Ta bort</button>
             </li>
         ))}
       </ul>      
@@ -61,12 +61,12 @@ function App(){
           onChange={handleChange}
           placeholder="Skriv här..."
           />
-        <p>Kladd för tillfället...</p>
-        <button type="button" onClick={handleClear}>Ta bort text i rutan</button>
-        <button type="button" onClick={addText}>Lägg till i listan</button>
-        <button type="button" onClick={clearList}>Ta bort hela listan</button>
+          <button class="add" onClick={addText}>Lägg till i listan</button>
+          <h1>Just do it!</h1>        
+        <div><button class="delete" onClick={handleClear}>Ta bort text i rutan</button></div>
+        <div><button class="clear" onClick={clearList}>Ta bort hela listan</button></div>
       </section>
-    </main>
+    </div>
   );
 }
 
